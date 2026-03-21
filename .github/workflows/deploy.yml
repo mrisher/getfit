@@ -62,4 +62,5 @@ jobs:
           deliverables: app.yaml
 
       - name: Output URL
-        run: echo "App Engine URL: ${{ steps.deploy.outputs.url }}"
+        run: |
+          echo "App Engine URL: ${{ steps.deploy.outputs.url }}"
